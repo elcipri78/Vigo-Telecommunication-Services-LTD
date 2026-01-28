@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alberto Loredo | Telecommunications & Technology Consultancy</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; line-height: 1.6; color: #1f2937; }
+    header { background: linear-gradient(120deg, #0f172a, #1e3a8a); color: #fff; padding: 60px 20px; }
+    header .container { max-width: 1100px; margin: auto; display: flex; gap: 40px; align-items: center; }
+    header img { width: 220px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+    section { padding: 60px 20px; }
+    .container { max-width: 1100px; margin: auto; }
+    h1, h2, h3 { color: #0f172a; }
+    h1 { color: #fff; font-size: 2.5rem; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+    .card { background: #f8fafc; border-radius: 16px; padding: 24px; box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
+    footer { background: #0f172a; color: #e5e7eb; padding: 40px 20px; }
+    a { color: #2563eb; text-decoration: none; }
+    .nav-link { color:#e5e7eb; font-weight:600; }
+    .nav-link.active { border-bottom:2px solid #60a5fa; padding-bottom:4px; }
+  </style>
+</head>
+<body>
+
+<nav style="background:#0f172a; padding:12px 20px; position:sticky; top:0; z-index:100;">
+  <div class="container" style="display:flex; gap:20px;">
+    <a href="#home" class="nav-link active" onclick="showTab('home')">Home</a>
+    <a href="#about" class="nav-link" onclick="showTab('about')">About</a>
+    <a href="#services" class="nav-link" onclick="showTab('services')">Services</a>
+    <a href="#book" class="nav-link" onclick="showTab('book')">Book a Call</a>
+    <a href="#contact" class="nav-link" onclick="showTab('contact')">Contact</a>
+  </div>
+</nav>
+
+<!-- HOME -->
+<div id="home" class="tab">
+  <header>
+    <div class="container">
+      <img src="Professional_photo_linkedin.jpg" alt="Alberto Loredo" />
+      <div>
+        <h1>Alberto Loredo</h1>
+        <p><strong>Telecommunications & Technology Consultant</strong></p>
+        <p>21+ years delivering transformation across 5G, O-RAN, IoT, AI and satellite connectivity for operators, vendors and enterprises worldwide.</p>
+      </div>
+    </div>
+  </header>
+</div>
+
+<!-- ABOUT -->
+<div id="about" class="tab" style="display:none;">
+  <section>
+    <div class="container">
+      <h2>About</h2>
+      <p>I am an independent telecommunications consultant with deep hands-on and strategic experience across mobile networks, cloud-native architectures and emerging connectivity technologies. I have led large-scale transformation programmes, vendor selections, product strategy and go-to-market initiatives for Tier-1 operators and global technology providers across Europe, the Americas and Asia.</p>
+      <h3 style="margin-top:40px;">Why Work With Me</h3>
+      <ul>
+        <li>Proven delivery across operators, vendors and enterprises</li>
+        <li>Hands-on technical depth combined with executive-level advisory</li>
+        <li>Multi-vendor and multi-country experience</li>
+        <li>Fluent in English, Spanish, Portuguese and French</li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+<!-- SERVICES -->
+<div id="services" class="tab" style="display:none;">
+  <section>
+    <div class="container">
+      <h2>Consultancy Services</h2>
+
+      <h3>For Operators</h3>
+      <div class="services">
+        <div class="card">
+          <h4>5G / O-RAN Strategy</h4>
+          <p>Network roadmap definition, vendor selection, RFI/RFP support and large-scale transformation programmes.</p>
+        </div>
+        <div class="card">
+          <h4>Network Transformation & Assurance</h4>
+          <p>RAN modernisation, virtualisation, automation (C-SON), VoLTE launches and KPI-driven service assurance.</p>
+        </div>
+      </div>
+
+      <h3 style="margin-top:40px;">For Vendors & Scale-ups</h3>
+      <div class="services">
+        <div class="card">
+          <h4>Pre-Sales & Technical Positioning</h4>
+          <p>Operator engagement, demos, RFP/RFQ responses and competitive technical differentiation.</p>
+        </div>
+        <div class="card">
+          <h4>Product Strategy & Go-To-Market</h4>
+          <p>Product roadmap definition, PLM prioritisation and commercialisation strategy.</p>
+        </div>
+      </div>
+
+      <h3 style="margin-top:40px;">For Investors</h3>
+      <div class="services">
+        <div class="card">
+          <h4>Technology Due Diligence</h4>
+          <p>Independent assessment of technology maturity, scalability, risks and cost structures.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- BOOK A CALL -->
+<div id="book" class="tab" style="display:none;">
+  <section>
+    <div class="container">
+      <h2>Book an Advisory Call</h2>
+      <p>Schedule a confidential 30-minute consultation to discuss your challenge.</p>
+      <iframe src="https://calendly.com/yourcalendly/30min" width="100%" height="650" frameborder="0"></iframe>
+    </div>
+  </section>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="tab" style="display:none;">
+  <footer>
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:alberto.loredo@gmail.com">alberto.loredo@gmail.com</a></p>
+      <p>Phone: +44 7474 670102</p>
+      <p>Location: London, United Kingdom</p>
+
+      <h3>Get in Touch</h3>
+      <form action="https://formspree.io/f/yourformid" method="POST" style="max-width:600px;">
+        <input type="text" name="name" placeholder="Your name" required style="width:100%; padding:10px; margin-bottom:10px;" />
+        <input type="email" name="email" placeholder="Your email" required style="width:100%; padding:10px; margin-bottom:10px;" />
+        <textarea name="message" placeholder="How can I help you?" rows="4" required style="width:100%; padding:10px; margin-bottom:10px;"></textarea>
+        <button type="submit" style="padding:12px 20px; background:#2563eb; color:#fff; border:none; border-radius:8px;">Send message</button>
+      </form>
+
+      <h3 style="margin-top:40px;">LinkedIn</h3>
+      <a href="https://www.linkedin.com/in/albertoloredo" target="_blank">Connect with me on LinkedIn</a>
+    </div>
+  </footer>
+</div>
+
+<script>
+  function showTab(tabId) {
+    document.querySelectorAll('.tab').forEach(t => t.style.display = 'none');
+    document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+    document.getElementById(tabId).style.display = 'block';
+    document.querySelector(`a[href="#${tabId}"]`).classList.add('active');
+    history.pushState(null, '', `#${tabId}`);
+  }
+
+  function loadFromHash() {
+    const tab = location.hash.replace('#','') || 'home';
+    showTab(tab);
+  }
+
+  window.addEventListener('load', loadFromHash);
+</script>
+
+</body>
+</html>
